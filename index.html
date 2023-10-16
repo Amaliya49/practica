@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        let teacher = {
+			surname: 'Михеева',
+			name: 'Татьяна',
+			patronymic: 'Александровна',
+			ocupation:'Преподаватель специальных дисциплин',
+			degree: 'Высшее',
+			education: 'Московский государственный институт электронной техники (технический университет)',
+            qualification: 'Инженер-программист инфокоммуникационных систем',
+            specialty: 'Программное обеспечение радиоэлектронных систем',
+			discipline: ['Основы алгоритмизации и программирования;','Компьютерная графика.'],
+            category:prompt('Категория:', 'Первая'),
+            experience:prompt('Стаж:',' '),
+            email:prompt('E-mail:','pechora_proger@mail.ru'),
+            personal_site:prompt('Персональный сайт:','pechora_proger.ru')
+		};
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="one"><a href="#">О проекте</a></li>
+                <li class="one"><a href="#">Курсы</a></li>
+                <li class="one"><a href="#">Преподаватели</a></li>
+                <li class="one"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td>
+        <img src="img.jpg" width="420" height="500" class="img">
+                </td>
+                <td>
+        <section class="info">
+        <script>
+            let information = `
+            <h1> ${teacher.surname}<br> ${teacher.name} ${teacher.patronymic} </h1> 
+            <h3> ${teacher.ocupation} </h3>
+            <hr>
+            <p>Основная информация: </p>
+            <ul> 
+            <li><b>Уровень образования:</b> ${teacher.degree} </li>
+            <li><b> Образование:</b> ${teacher.education} </li>
+            <li><b> Квалификация:</b> ${teacher.qualification} </li>
+            <li><b> Специализация:</b> ${teacher.specialty} </li>
+            <li><b> Преподаваемые дисциплины:</b> </li>
+            <ul> 
+                <li> ${teacher.discipline[0]} </li>
+                <li> ${teacher.discipline[1]} </li>
+            </ul>
+            </ul>
+            <p>Дополнительная информация: </p>
+            <ul>  
+            <li><b>Категория:</b> ${teacher.category}</li>
+            <li><b>Стаж:</b> ${teacher.experience}</li>
+            <li><b>E-mail:</b> ${teacher.email}</li>
+            <li><b>Персональный сайт:</b> ${teacher.personal_site}</li>
+            </ul>`;
+                document.write(information);
+        </script> 
+                </td>
+      
+            </tr>
+        </table>
+    </section>
+</main>
+</body>
+</html>

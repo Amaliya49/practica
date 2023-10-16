@@ -1,0 +1,34 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-attachment: fixed;
+    background-color: #edd8ab;
+    font-size: 20px;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #d1a268;
+}
+nav ul{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.one{
+    list-style: none;
+    padding-right: 30px; 
+    font-size: 20px;
+}
+.img{
+    margin: 116px 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    border: 1px solid #a6671b;
+}
